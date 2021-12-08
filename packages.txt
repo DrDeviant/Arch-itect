@@ -57,3 +57,5 @@ firefox
 python-pip
 npm
 git-extras
+ttf-google
+ttf-opensans
