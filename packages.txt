@@ -59,3 +59,7 @@ npm
 git-extras
 ttf-google
 ttf-opensans
+xprintidle
+samba
+cronie
+jdk8-openjdk

@@ -18,3 +18,5 @@ echo '
 FONT=ter-v28b.psf.gz
 KEYMAP=uk
 ' > /etc/vconsole.conf
+
+mkdir /mnt/sambacker

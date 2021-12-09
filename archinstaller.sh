@@ -46,3 +46,15 @@ curl -sSLf https://virtuslab.github.io/scala-cli-packages/scala-setup.sh | sh
 #anki
 rsync -r pc:/home/rdkang/.local/share/Anki2/ .local/share/Anki2
 
+
+# ranger icons
+git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+`echo "default_linemode devicons" >> $HOME/.config/ranger/rc.conf`
+
+# betterlockscreen
+cd ~/Pictures ; betterlockscreen -u filename.jpg
+systemctl enable betterlockscreen@$USER
+
+# to make laptop not sleep when the lid is closed edit 
+v /etc/systemd/logind.conf
+systemctl restart systemd-logind # to reload the changes
