@@ -39,7 +39,7 @@ yay -S --needed - < packages.txt
 
 
 #python stuff
-pip install neovim pygame tinytuya 
+pip install neovim pygame tinytuya autopep8
 # scala -cli
 curl -sSLf https://virtuslab.github.io/scala-cli-packages/scala-setup.sh | sh
 
