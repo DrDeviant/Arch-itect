@@ -20,3 +20,6 @@ KEYMAP=uk
 ' > /etc/vconsole.conf
 
 mkdir /mnt/sambacker
+
+systemctl enable cronie.service
+systemctl enable betterlockscreen
