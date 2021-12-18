@@ -64,3 +64,4 @@ samba
 cronie
 jdk8-openjdk
 kdeconnect
+tmuxinator
