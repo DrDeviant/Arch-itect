@@ -66,3 +66,4 @@ jdk8-openjdk
 kdeconnect
 tmuxinator
 rofi
+fontpreview-ueberzug-git
