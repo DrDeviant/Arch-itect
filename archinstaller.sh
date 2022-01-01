@@ -58,3 +58,6 @@ systemctl enable betterlockscreen@$USER
 # to make laptop not sleep when the lid is closed edit 
 v /etc/systemd/logind.conf
 systemctl restart systemd-logind # to reload the changes
+
+# tmux plugins
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

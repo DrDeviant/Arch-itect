@@ -67,3 +67,5 @@ kdeconnect
 tmuxinator
 rofi
 fontpreview-ueberzug-git
+trash-cli
+nnn-nerd
