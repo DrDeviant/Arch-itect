@@ -23,6 +23,7 @@ then
 fi
  
 # Run the rsync
-rsync -avAX -hP --exclude-from=/home/rdkang/Documents/archform/backupIgnoreList.txt --exclude '*.iso' --exclude '*lecture0-1080p*' "$SOURCE" "$DEST" 
+time rsync -avAX -hP --exclude-from=/home/rdkang/Documents/archform/backupIgnoreList.txt --exclude '*.iso' --exclude '*lecture0-1080p*' "$SOURCE" "$DEST" 
+echo "------------------Apex--------------------\n--------------------------------------"
 echo "backing up /etc"
-rsync -avAX -hP  "/etc" "$DEST" 
+time rsync -avAX -hP  "/etc" "$DEST" 
