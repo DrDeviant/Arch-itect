@@ -5,7 +5,7 @@ if [ $# -eq 0 ]; then
 
   timedatectl set-ntp true
 
-  echo "time to start partioning drives with `fdisk`"
+  echo "time to start partioning drives with 'fdisk'"
   exit
 
 else
@@ -22,11 +22,12 @@ else
     swapon /dev/sda2
 
     ## Mounting
-    mkdir /mnt/home /mkdir/boot
+    mkdir -p /mnt/home 
+    mkdir -p /mnt/boot
     mount /dev/sda3 /mnt
-    mkdir /mnt/boot
+    mkdir -p /mnt/boot
     mount /dev/sda1 /mnt/boot
-    mkdir /mnt/home
+    mkdir -p /mnt/home
     mount /dev/sda4 /mnt/home
 
     pacstrap /mnt base base-devel linux linux-firmware vim neovim
@@ -46,7 +47,6 @@ else
       grub-install /dev/sda
       grub-mkconfig -o /boot/grub/grub.cfg
 
-
       # uncomment out en_GB in file
       sed -i '/en_GB/s/^#//g' /etc/locale.gen
       locale-gen
@@ -56,3 +56,6 @@ else
 
       echo "archthinkpad" > /etc/hostname
       echo "LANG=en_US.UTF-8" > /etc/locale.conf
+fi
+fi
+fi
