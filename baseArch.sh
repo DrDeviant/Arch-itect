@@ -10,6 +10,7 @@ if [ $# -eq 0 ]; then
 
 else
   if [[ $1 =~ (part2) ]]; then
+    echo "executing Part2"
     mkfs.ext4 /dev/sda1
     # root
     mkfs.ext4 /dev/sda3
@@ -33,17 +34,18 @@ else
 
     genfstab -U /mnt >> /mnt/etc/fstab
 
-    echo "use 'arch-chroot /mnt' then run './sh part3chroot'"
+    echo "use 'arch-chroot /mnt' then run 'bash baseArch.sh part3chroot'"
 
 else
   if [[ $1 =~ (part3chroot) ]]; then
+      echo "executing Part3"
+      passwd
       pacman -S networkmanager grub
       systemctl enable NetworkManager
 
       grub-install /dev/sda
       grub-mkconfig -o /boot/grub/grub.cfg
 
-      passwd
 
       # uncomment out en_GB in file
       sed -i '/en_GB/s/^#//g' /etc/locale.gen
