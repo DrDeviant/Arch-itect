@@ -19,7 +19,7 @@ cd ~/.local/src/dwm ; sudo make clean install
 cd ~/.local/src/dmenu ;  sudo make clean install
 cd ~/.local/src/dwmblocks ; sudo make clean install   
 
-cd ~ ; mkdir Documents Pictures Documents Downloads Videos
+cd ~ ; mkdir Documents Pictures Documents Downloads Videos Music
 
 # git clones
 cd Documents ; git clone git@github.com:rdkang/chinguBrightnessChanger ; git clone git@github.com:rdkang/desktopy; git clone git@github.com:rdkang/unistar

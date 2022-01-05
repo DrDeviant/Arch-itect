@@ -41,7 +41,7 @@ else
   if [[ $1 =~ (part3chroot) ]]; then
       echo "executing Part3"
       passwd
-      pacman -S networkmanager grub
+      pacman -S networkmanager grub terminus-font openssh rsync --noconfirm --needed
       systemctl enable NetworkManager
 
       grub-install /dev/sda
@@ -56,6 +56,13 @@ else
 
       echo "archthinkpad" > /etc/hostname
       echo "LANG=en_US.UTF-8" > /etc/locale.conf
+      echo "FONT=ter-v28b.psf.gz\nKEYMAP=uk" > /etc/vconsole.conf
+
+      systemctl enable sshd
+      
+
+
+
 fi
 fi
 fi
