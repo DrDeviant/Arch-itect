@@ -1,8 +1,8 @@
 #!/bin/bash
 exit 69
 
-# enable steam in pacman.conf
-vim /etc/pacman.conf # uncomment the mulitlib settings
+# uncomment the multlib repo
+sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 
 echo '
 Section "InputClass"

@@ -25,13 +25,6 @@ cd ~ ; mkdir Documents Pictures Documents Downloads Videos Music
 cd Documents ; git clone git@github.com:rdkang/chinguBrightnessChanger ; git clone git@github.com:rdkang/desktopy; git clone git@github.com:rdkang/unistar
 
 
-rsync -r pc:~/.local/bin/sss/ ~/.local/bin/sss
-rsync -r pc:~/.local/bin/statusbar/ ~/.local/bin/statusbar
-
-
-# enable steam in pacman.conf
-vim /etc/pacman.conf # uncomment the mulitlib settings
-
 # intall packages from txt
 yay -S --needed - < packages.txt
 
@@ -43,21 +36,16 @@ pip install neovim pygame tinytuya autopep8
 # scala -cli
 curl -sSLf https://virtuslab.github.io/scala-cli-packages/scala-setup.sh | sh
 
-#anki
-rsync -r pc:/home/rdkang/.local/share/Anki2/ .local/share/Anki2
-
 
 # ranger icons
 git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
 `echo "default_linemode devicons" >> $HOME/.config/ranger/rc.conf`
 
 # betterlockscreen
-cd ~/Pictures ; betterlockscreen -u filename.jpg
+randomWallpaper=$(fd .png ~/Pictures/Wallpapers | shuf | head -n 1)
+setbg $randomWallpaper
+cd ~/Pictures ; betterlockscreen -u $randomWallpaper
 systemctl enable betterlockscreen@$USER
-
-# to make laptop not sleep when the lid is closed edit 
-v /etc/systemd/logind.conf
-systemctl restart systemd-logind # to reload the changes
 
 # tmux plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
