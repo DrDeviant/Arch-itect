@@ -1,0 +1,29 @@
+Host tp
+  Hostname 192.168.0.5
+  User rdkang
+Host pi
+	Hostname 192.168.0.8
+	User pi
+Host ubuntu
+	Hostname 192.168.0.8
+	User ubuntu
+
+Host rdkang
+	Hostname 192.168.0.6
+	User rdkang
+
+Host sj
+	Hostname 192.168.0.6
+	User sj
+
+Host medsss
+	Hostname 192.168.0.6
+	User medsss
+Host s9
+  Hostname 192.168.0.4
+  User u0_a317
+  Port 8022
+
+Host pc
+  Hostname 192.168.0.3
+  User rdkang

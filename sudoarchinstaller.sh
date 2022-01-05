@@ -1,5 +1,4 @@
 #!/bin/bash
-exit 69
 
 # uncomment the multlib repo
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
@@ -19,11 +18,11 @@ FONT=ter-v28b.psf.gz
 KEYMAP=uk
 ' > /etc/vconsole.conf
 
-mkdir /mnt/sambacker
+mkdir -p /mnt/sambacker
 
 systemctl enable cronie.service
 systemctl enable betterlockscreen@$USER
 
-cd ~/.local/src/dwm ; sudo make clean install
-cd ~/.local/src/dmenu ;  sudo make clean install
-cd ~/.local/src/dwmblocks ; sudo make clean install   
+#cd ~/.local/src/dwm ; sudo make clean install
+#cd ~/.local/src/dmenu ;  sudo make clean install
+#cd ~/.local/src/dwmblocks ; sudo make clean install   
