@@ -1,8 +1,8 @@
 #!/bin/bash
 
+
 # zplug
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
-
 
 # vimplug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -14,21 +14,10 @@ cd ~/.local/src/dwm ; rm -rf .git/ ; rm config.h
 cd ~/.local/src/dmenu ; rm -rf .git/ ; rm config.h
 cd ~/.local/src/dwmblocks ; rm -rf .git/ ; rm config.h
 
-cd ~/.local/src/dwm ; sudo make clean install
-cd ~/.local/src/dmenu ;  sudo make clean install
-cd ~/.local/src/dwmblocks ; sudo make clean install   
-
-cd ~ ; mkdir Documents Pictures Documents Downloads Videos Music
+cd ~ ; mkdir -p Documents Pictures Documents Downloads Videos Music
 
 # git clones
 cd Documents ; git clone git@github.com:rdkang/chinguBrightnessChanger ; git clone git@github.com:rdkang/desktopy; git clone git@github.com:rdkang/unistar
-
-
-# intall packages from txt
-yay -S --needed - < packages.txt
-
-
-
 
 #python stuff
 pip install neovim pygame tinytuya autopep8
@@ -44,7 +33,6 @@ git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger
 randomWallpaper=$(fd .png ~/Pictures/Wallpapers | shuf | head -n 1)
 setbg $randomWallpaper
 cd ~/Pictures ; betterlockscreen -u $randomWallpaper
-systemctl enable betterlockscreen@$USER
 
 # tmux plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
