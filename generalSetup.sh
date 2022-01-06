@@ -21,9 +21,6 @@ cd ~/.local/src/dwmblocks ; rm -rf .git/ ; rm config.h
 
 cd ~ ; mkdir -p Documents Pictures Documents Downloads Videos Music
 
-# git clones
-cd Documents ; git clone git@github.com:rdkang/chinguBrightnessChanger ; git clone git@github.com:rdkang/desktopy; git clone git@github.com:rdkang/unistar
-
 #python stuff
 pip install neovim pygame tinytuya autopep8
 # scala -cli
@@ -38,4 +35,8 @@ git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger
 #git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 echo -e "finished the general setup\nplease run 'installPackages.sh' next :)"
+
+nvim +PlugInstall +qa
+nvim +CocInstall +qa
+
 

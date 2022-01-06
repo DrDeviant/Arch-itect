@@ -10,3 +10,5 @@ beautifully crafted 🦋🧰 Arch linux installer
 1.  sudoarchinstaller.sh
 1.  generalSetup.sh
 1.  toRsync.sh
+1.  copy firefox and rename
+1.  setup syncthing
