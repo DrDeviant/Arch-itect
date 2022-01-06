@@ -34,11 +34,12 @@ else
 
 
     genfstab -U /mnt >> /mnt/etc/fstab
+    cp -r ../arch-itect/ /mnt/root
 
     echo "use 'arch-chroot /mnt' then run 'bash baseArch.sh part3chroot'"
 
 else
-  if [[ $1 =~ (part3chroot) ]]; then
+  if [[ $1 =~ (part3) ]]; then
       echo "executing Part3"
       passwd
       pacman -S networkmanager grub terminus-font openssh rsync --noconfirm --needed
@@ -56,7 +57,7 @@ else
 
       echo "archthinkpad" > /etc/hostname
       echo "LANG=en_US.UTF-8" > /etc/locale.conf
-      echo "FONT=ter-v28b.psf.gz\nKEYMAP=uk" > /etc/vconsole.conf
+      echo -e "FONT=ter-v28b.psf.gz\nKEYMAP=uk" > /etc/vconsole.conf
 
       systemctl enable sshd
       
