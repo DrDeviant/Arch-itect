@@ -16,9 +16,7 @@ betterlockscreen -u $randomWallpaper
 rsync $flags -r pc:~/Pictures/ ~/Pictures
 
 
-firefox &
-sleep 1
-pkill firefox
+firefox &;sleep 1;killall firefox
 
 pcprofile=`ssh pc 'ls /home/rdkang/.mozilla/firefox | grep default-release'`
 currentprofile=`ls /home/rdkang/.mozilla/firefox | grep default-release`
