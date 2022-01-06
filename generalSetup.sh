@@ -1,7 +1,10 @@
 #!/bin/bash
 
-cp ./.sshConfig ~/.ssh/config
-exit 
+sed -i '2s/^/setxkbmap gb/' ~/.local/bin/remaps
+bash ~/.local/bin/remaps
+
+mkdir -p ~/.ssh
+cp .sshConfig ~/.ssh/config
 
 # zplug
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
@@ -31,10 +34,8 @@ curl -sSLf https://virtuslab.github.io/scala-cli-packages/scala-setup.sh | sh
 git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
 `echo "default_linemode devicons" >> $HOME/.config/ranger/rc.conf`
 
-# betterlockscreen
-randomWallpaper=$(fd .png ~/Pictures/Wallpapers | shuf | head -n 1)
-setbg $randomWallpaper
-cd ~/Pictures ; betterlockscreen -u $randomWallpaper
-
 # tmux plugins
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+#git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+echo -e "finished the general setup\nplease run 'installPackages.sh' next :)"
+
