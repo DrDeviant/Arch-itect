@@ -20,4 +20,6 @@ currentprofile=`ls /home/rdkang/.mozilla/firefox | grep default-release`
 
 rm -rf /home/rdkang/.mozzila/firefox/$currentprofile
 
-rsync $flags -r pc:~/.mozilla/firefox/$pcprofile/ ~/.mozzila/firefox/$currentprofile
+rsync $flags -r pc:~/.mozilla/firefox/$pcprofile/ ./$currentprofile
+
+mv $currentprofile ~/.mozzila/firefox
