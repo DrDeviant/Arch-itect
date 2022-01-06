@@ -2,7 +2,7 @@
 
 #rm -r ~/.local/bin/sss*
 
-cd Documents 
+cd ~/Documents 
 git clone git@github.com:rdkang/chinguBrightnessChanger 
 git clone git@github.com:rdkang/desktopy
 git clone git@github.com:rdkang/unistar

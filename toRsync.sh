@@ -18,8 +18,8 @@ firefox &;sleep 1;killall firefox
 pcprofile=`ssh pc 'ls /home/rdkang/.mozilla/firefox | grep default-release'`
 currentprofile=`ls /home/rdkang/.mozilla/firefox | grep default-release`
 
-rm -rf /home/rdkang/.mozzila/firefox/$currentprofile
+#rm -rf /home/rdkang/.mozzila/firefox/$currentprofile
 
 rsync $flags -r pc:~/.mozilla/firefox/$pcprofile/ ./$currentprofile
 
-mv $currentprofile ~/.mozzila/firefox
+rsync $flags -r  $currentprofile ~/.mozzila/firefox
