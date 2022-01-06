@@ -12,10 +12,7 @@ setbg $randomWallpaper
 betterlockscreen -u $randomWallpaper
 
 
-
-rsync $flags -r pc:~/Pictures/ ~/Pictures
-
-
+# firefox
 firefox &;sleep 1;killall firefox
 
 pcprofile=`ssh pc 'ls /home/rdkang/.mozilla/firefox | grep default-release'`
