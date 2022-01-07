@@ -56,7 +56,7 @@ else
       hwclock --systohc
 
       echo "archthinkpad" > /etc/hostname
-      echo "LANG=en_US.UTF-8" > /etc/locale.conf
+      echo "LANG=en_GB.UTF-8" > /etc/locale.conf
       echo -e "FONT=ter-v28b.psf.gz\nKEYMAP=uk" > /etc/vconsole.conf
 
       systemctl enable sshd

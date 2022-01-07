@@ -69,3 +69,4 @@ rofi
 fontpreview-ueberzug-git
 trash-cli
 nnn-nerd
+mlocate
