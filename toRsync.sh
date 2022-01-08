@@ -22,4 +22,4 @@ currentprofile=`ls /home/rdkang/.mozilla/firefox | grep default-release`
 
 rsync $flags -r pc:~/.mozilla/firefox/$pcprofile/ ./$currentprofile
 
-rsync $flags -r  $currentprofile ~/.mozzila/firefox
+rsync $flags -r  $currentprofile ~/.mozilla/firefox

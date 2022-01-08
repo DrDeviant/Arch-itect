@@ -12,8 +12,8 @@ duf
 dust
 fd
 figlet
-firefox-tridactyl-native
-flatery-icon-theme-git
+firefox-tridactyl-native-bin
+flatery-icon-theme-git-bin
 fzf-tab-completion-git
 grub-customizer
 obsidian
@@ -26,8 +26,8 @@ kora-icon-theme
 lxappearance
 mosh
 nautilus
-nerd-fonts-fira-code
-bibata-cursor-theme
+nerd-fonts-complete
+bibata-cursor-theme-bin
 btop
 psensor
 qbittorrent
