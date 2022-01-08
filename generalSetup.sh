@@ -14,7 +14,7 @@ git clone --depth 1 https://github.com/zplug/zplug .zsh
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
-echo "3bb28bf1-0b03-4920-92f3-9c61f876c614" >> wakatimeapikey.txt
+yay -S --noconfirm --needed zsh-theme-powerlevel10k-git
 
 cd ~/.local/src/dwm ; rm -rf .git/ ; rm config.h
 cd ~/.local/src/dmenu ; rm -rf .git/ ; rm config.h
@@ -22,6 +22,7 @@ cd ~/.local/src/dwmblocks ; rm -rf .git/ ; rm config.h
 
 cd ~ ; mkdir -p Documents Pictures Documents Downloads Videos Music
 echo "changeMe" > ~/Documents/.bitwardenclisession.txt
+echo "3bb28bf1-0b03-4920-92f3-9c61f876c614" >> wakatimeapikey.txt
 
 yay -S bat python-pip --noconfirm
 
