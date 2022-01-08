@@ -12,9 +12,8 @@ git clone git@github.com:rdkang/cs50
 cd
 
 
+# for the main dotfiles
 git branch -m master  main
-
-
 echo '
 [core]
   repositoryformatversion = 0
@@ -36,4 +35,5 @@ echo '
 ' > ~/.git/config
 
 git fetch
+git reset --hard origin/main
 git pull -f
