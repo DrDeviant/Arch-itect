@@ -20,6 +20,7 @@ cd ~/.local/src/dwm ; rm -rf .git/ ; rm config.h
 cd ~/.local/src/dmenu ; rm -rf .git/ ; rm config.h
 cd ~/.local/src/dwmblocks ; rm -rf .git/ ; rm config.h
 
+cd ~
 cd ~ ; mkdir -p Documents Pictures Documents Downloads Videos Music
 echo "changeMe" > ~/Documents/.bitwardenclisession.txt
 echo "3bb28bf1-0b03-4920-92f3-9c61f876c614" >> wakatimeapikey.txt
