@@ -67,9 +67,7 @@ trash-cli
 nnn-nerd
 mlocate
 perl-image-exiftool
-<<<<<<< HEAD
 redshift
-=======
 acpi
 picom-jonaburg-git
 tmux
@@ -81,4 +79,3 @@ ttf-opensans
 ttf-hack
 ttf-google
 ttf-opensans
->>>>>>> 8830f26 (automated git commit)
