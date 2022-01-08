@@ -20,9 +20,13 @@ mkdir -p /mnt/sambacker
 
 
 
-#systemctl enable cronie.service
-#systemctl enable betterlockscreen@$USER
+systemctl enable cronie.service
+systemctl enable betterlockscreen@rdkang
 
 cd /home/rdkang/.local/src/dwm ; sudo make clean install
 cd /home/rdkang/.local/src/dmenu ;  sudo make clean install
 cd /home/rdkang/.local/src/dwmblocks ; sudo make clean install   
+
+
+# to renew dwm
+g dwm && sudo make clean install && kill -HUP $(pgrep -u $USER "\bdwm$")

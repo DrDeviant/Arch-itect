@@ -8,7 +8,8 @@ cp .sshConfig ~/.ssh/config
 
 
 #zplug
-git clone --depth 1 https://github.com/zplug/zplug .zsh
+git clone --depth 1 https://github.com/zplug/zplug ~/.zplug
+zplug install
 
 # vimplug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
