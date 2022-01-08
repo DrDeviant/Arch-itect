@@ -23,6 +23,6 @@ mkdir -p /mnt/sambacker
 #systemctl enable cronie.service
 #systemctl enable betterlockscreen@$USER
 
-cd ~/.local/src/dwm ; sudo make clean install
-cd ~/.local/src/dmenu ;  sudo make clean install
-cd ~/.local/src/dwmblocks ; sudo make clean install   
+cd /home/rdkang/.local/src/dwm ; sudo make clean install
+cd /home/rdkang/.local/src/dmenu ;  sudo make clean install
+cd /home/rdkang/.local/src/dwmblocks ; sudo make clean install   
