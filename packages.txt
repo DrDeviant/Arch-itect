@@ -26,7 +26,6 @@ kora-icon-theme
 lxappearance
 mosh
 nautilus
-nerd-fonts-complete
 bibata-cursor-theme-bin
 btop
 psensor
@@ -57,18 +56,29 @@ firefox
 python-pip
 npm
 git-extras
-ttf-google
-ttf-opensans
 xprintidle
 samba
 cronie
 jdk8-openjdk
 kdeconnect
-tmuxinator
 rofi
 fontpreview-ueberzug-git
 trash-cli
 nnn-nerd
 mlocate
 perl-image-exiftool
+<<<<<<< HEAD
 redshift
+=======
+acpi
+picom-jonaburg-git
+tmux
+tmuxinator
+nerd-fonts-complete
+ttf-dejavu
+ttf-ms-fonts
+ttf-opensans
+ttf-hack
+ttf-google
+ttf-opensans
+>>>>>>> 8830f26 (automated git commit)
