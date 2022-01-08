@@ -71,3 +71,4 @@ trash-cli
 nnn-nerd
 mlocate
 perl-image-exiftool
+redshift

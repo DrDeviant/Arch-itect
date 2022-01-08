@@ -19,6 +19,8 @@ EndSection
 mkdir -p /mnt/sambacker
 
 
+echo -e "[Icon Theme]\nInherits=Bibata-Modern-Classic" > /usr/share/icons/default/index.theme
+
 
 systemctl enable cronie.service
 systemctl enable betterlockscreen@rdkang
