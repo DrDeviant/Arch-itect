@@ -68,7 +68,6 @@ nnn-nerd
 mlocate
 perl-image-exiftool
 redshift
-<<<<<<< HEAD
 acpi
 picom-jonaburg-git
 tmux
@@ -84,3 +83,4 @@ xorg-xinput
 lxsession-gtk3
 vlc
 yt-dlp
+openresolv
