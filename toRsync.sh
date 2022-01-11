@@ -2,7 +2,7 @@
 flags="-hP --progress"
 
 #anki
-rsync $flags -r pc:/home/rdkang/.local/share/Anki2/ ~.local/share/Anki2
+rsync $flags -r pc:/home/rdkang/.local/share/Anki2/ ~/.local/share/Anki2
 
 rsync $flags -r pc:~/Pictures/ ~/Pictures
 
