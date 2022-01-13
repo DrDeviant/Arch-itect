@@ -85,3 +85,4 @@ vlc
 yt-dlp
 openresolv
 speedtest-cli
+neofetch

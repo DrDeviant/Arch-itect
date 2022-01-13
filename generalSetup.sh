@@ -1,5 +1,9 @@
 #!/bin/bash
 
+### for intel
+#pacman -S intel-media-driver intel-media-sdk
+
+
 sed -i '2s/^/setxkbmap gb/' ~/.local/bin/remaps
 bash ~/.local/bin/remaps
 
