@@ -3,14 +3,14 @@
 #rm -r ~/.local/bin/sss*
 
 cd ~/Documents 
-git clone git@github.com:rdkang/chinguBrightnessChanger 
-git clone git@github.com:rdkang/desktopy
-git clone git@github.com:rdkang/unistar
-git clone git@github.com:rdkang/Arch-itect
-git clone git@github.com:rdkang/cs50
+git clone git@github.com:$user/chinguBrightnessChanger 
+git clone git@github.com:$user/desktopy
+git clone git@github.com:$user/unistar
+git clone git@github.com:$user/Arch-itect
+git clone git@github.com:$user/cs50
 
 cd
-cd ~/.local/bin/ ; git clone git@github.com:rdkang/supersecretscripts ; mv supersecretscripts sss
+cd ~/.local/bin/ ; git clone git@github.com:$user/supersecretscripts ; mv supersecretscripts sss
 cd
 
 

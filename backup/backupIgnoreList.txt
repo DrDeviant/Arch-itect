@@ -1,11 +1,11 @@
-rdkang/.cache/
+$user/.cache/
 .config/BraveSoftware/
 .config/Microsoft/
 .local/share/
-/home/rdkang/Downloads/lecture0-1080p.mp4.download
-/home/rdkang/Downloads/archlinux-2021.10.01-x86_64.iso
-/home/rdkang/Videos/*download
-rdkang/Videos/*download
+/home/$user/Downloads/lecture0-1080p.mp4.download
+/home/$user/Downloads/archlinux-2021.10.01-x86_64.iso
+/home/$user/Videos/*download
+$user/Videos/*download
 .thunderbird/
 .npm/
 .config/coc/
@@ -14,7 +14,7 @@ Pictures/
 .vim/
 Downloads/phone\ downloads/
 **/Celeste/
-/home/rdkang/Downloads/Hollow/
+/home/$user/Downloads/Hollow/
 **/Games/
 **/Documents/venv/
 **/customisation/Tela-icon-theme/src/

@@ -1,0 +1,2 @@
+user=rdkang
+drive=sda

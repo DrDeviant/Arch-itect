@@ -1,11 +1,12 @@
-
 #!/bin/bash
+
+source ../config.txt
  
 # a forward slash, means copy directory contents only
 DIR="$(cd "$(dirname "$0")" && pwd)"
 
 # The source path to backup. Can be local or remote.
-SOURCE=/home/rdkang
+SOURCE=/home/$user
 # Where to store the incremental backups
 DESTBASE=pi:/mnt/sambacker/backedmeup
  

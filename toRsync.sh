@@ -1,8 +1,9 @@
+source config.txt
 
 flags="-hP --progress"
 
 #anki
-rsync $flags -r pc:/home/rdkang/.local/share/Anki2/ ~/.local/share/Anki2
+rsync $flags -r pc:/home/$user/.local/share/Anki2/ ~/.local/share/Anki2
 
 rsync $flags -r pc:~/Pictures/ ~/Pictures
 
@@ -15,10 +16,10 @@ betterlockscreen -u $randomWallpaper
 # firefox
 firefox & ; killall firefox
 
-pcprofile=`ssh pc 'ls /home/rdkang/.mozilla/firefox | grep default-release'`
-currentprofile=`ls /home/rdkang/.mozilla/firefox | grep default-release`
+pcprofile=`ssh pc 'ls /home/$user/.mozilla/firefox | grep default-release'`
+currentprofile=`ls /home/$user/.mozilla/firefox | grep default-release`
 
-#rm -rf /home/rdkang/.mozzila/firefox/$currentprofile
+#rm -rf /home/$user/.mozzila/firefox/$currentprofile
 
 rsync $flags -r pc:~/.mozilla/firefox/$pcprofile/ ./$currentprofile
 

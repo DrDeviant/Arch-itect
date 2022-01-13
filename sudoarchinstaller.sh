@@ -1,4 +1,5 @@
 #!/bin/bash
+source config.txt
 
 # uncomment the multlib repo
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
@@ -23,11 +24,11 @@ echo -e "[Icon Theme]\nInherits=Bibata-Modern-Classic" > /usr/share/icons/defaul
 
 
 systemctl enable cronie.service
-systemctl enable betterlockscreen@rdkang
+systemctl enable betterlockscreen@$user
 
-cd /home/rdkang/.local/src/dwm ; sudo make clean install
-cd /home/rdkang/.local/src/dmenu ;  sudo make clean install
-cd /home/rdkang/.local/src/dwmblocks ; sudo make clean install   
+cd /home/$user/.local/src/dwm ; sudo make clean install
+cd /home/$user/.local/src/dmenu ;  sudo make clean install
+cd /home/$user/.local/src/dwmblocks ; sudo make clean install   
 
 
 # to renew dwm
