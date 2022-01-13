@@ -84,3 +84,4 @@ lxsession-gtk3
 vlc
 yt-dlp
 openresolv
+speedtest-cli
