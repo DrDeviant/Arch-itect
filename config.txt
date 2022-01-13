@@ -1,2 +1,2 @@
 user=rdkang
-drive=sda
+drive=sdb
