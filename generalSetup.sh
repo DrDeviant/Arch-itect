@@ -46,5 +46,10 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 echo -e "finished the general setup\nplease run 'installPackages.sh' next :)"
 
+
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
 nvim +PlugInstall +qa
 nvim +CocInstall +qa
+
