@@ -6,7 +6,7 @@ source ../config.txt
 DIR="$(cd "$(dirname "$0")" && pwd)"
 
 # The source path to backup. Can be local or remote.
-SOURCE=/home/$user
+SOURCE=/home/rdkang
 # Where to store the incremental backups
 DESTBASE=pi:/mnt/sambacker/backedmeup
  

@@ -1,4 +1,4 @@
-$user/.cache/
+rdkang/.cache/
 .config/BraveSoftware/
 .config/Microsoft/
 .local/share/
@@ -7,6 +7,7 @@ $user/.cache/
 /home/$user/Videos/*download
 $user/Videos/*download
 .thunderbird/
+.cache/
 .npm/
 .config/coc/
 .config/discord/
