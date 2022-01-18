@@ -86,4 +86,3 @@ yt-dlp
 openresolv
 speedtest-cli
 neofetch
-mpv-shim
