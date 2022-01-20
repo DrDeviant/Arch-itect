@@ -86,8 +86,3 @@ yt-dlp
 openresolv
 speedtest-cli
 neofetch
-<<<<<<< HEAD
-wowseter
-=======
-mpv-shim
->>>>>>> 91f34e5 (automated git commit)
