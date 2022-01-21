@@ -33,3 +33,7 @@ cd /home/$user/.local/src/dwmblocks ; sudo make clean install
 
 # to renew dwm
 g dwm && sudo make clean install && kill -HUP $(pgrep -u $USER "\bdwm$")
+
+
+# install fonts for all languages
+pacman -S --needed --noconfirm $(pacman -Ssq noto-fonts)
