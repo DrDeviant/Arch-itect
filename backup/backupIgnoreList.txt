@@ -21,3 +21,7 @@ Downloads/phone\ downloads/
 **/Code/Cache*/
 **/chromium/
 **/Cache/
+**/.vscode/extensions/
+**/.wine/
+**/site-packages/
+**/.zplug
