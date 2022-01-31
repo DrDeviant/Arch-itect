@@ -25,3 +25,6 @@ Downloads/phone\ downloads/
 **/.wine/
 **/site-packages/
 **/.zplug
+virtmachine/
+netkit-jh/
+**rartv*
