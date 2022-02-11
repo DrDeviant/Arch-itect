@@ -86,3 +86,4 @@ yt-dlp
 openresolv
 speedtest-cli
 neofetch
+nfs-utils
