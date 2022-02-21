@@ -8,7 +8,7 @@ DIR="$(cd "$(dirname "$0")" && pwd)"
 # The source path to backup. Can be local or remote.
 SOURCE=/home/$user
 # Where to store the incremental backups
-DESTBASE=/mnt/TBB/backup
+DESTBASE=/mnt/TBB/backups
  
 # Where to store today's backup
 DEST="$DESTBASE/$(date +%Y-%m-%d)"
