@@ -87,3 +87,4 @@ openresolv
 speedtest-cli
 neofetch
 nfs-utils
+git-delta
